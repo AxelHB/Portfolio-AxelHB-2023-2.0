@@ -1,0 +1,48 @@
+#modo{
+    width: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #modo {
+        margin-left: 220px;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 320px) {
+    #modo {
+        margin-left: 200px;
+        margin-top: 10px;
+    }
+}
+
+
+.dark {
+    background-image: url(IMAGES/DARK-MODE/DORKMODE1.jpg);
+}
+
+.dark #modo {
+    background-image: url(IMAGES/DARK-MODE/toggle-on-solid.svg)
+}
+
+.dark .navbar a , .dark #presentacion .presentacion-contenido h1 , .dark #presentacion .presentacion-contenido h4 , .dark #presentacion .presentacion-contenido p , .dark #section-exp .parrafo-exp p , .dark #section-exp .contenedor .skill-box .title , .dark #trabajo .tit-trabajo h1 , #form .form-container .form-title {
+    color: aliceblue;
+}
+
+@media (max-width: 900px) {
+    .dark .navbar-links {
+      backdrop-filter: blur(23px) saturate(200%);
+    -webkit-backdrop-filter: blur(23px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+      transition: all .5s;
+    }
+}
+
+.dark .navbar , .dark #presentacion , .dark #section-exp .contenedor , .dark .form{
+    backdrop-filter: blur(9px) saturate(200%);
+    -webkit-backdrop-filter: blur(9px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.69);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    transition: .5s;
+}
