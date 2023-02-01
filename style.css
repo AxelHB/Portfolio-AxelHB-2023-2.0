@@ -265,6 +265,9 @@ li a:hover {
     border-left: 3px solid rgba(179, 167, 167, 0.308);
     padding-left: 50px;
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .presentacion-contenido h1 {
@@ -281,6 +284,7 @@ li a:hover {
 }
 
 .presentacion-contenido p {
+    
     text-align: justify;
     line-height: 30px;
     padding-top: 50px;
@@ -289,7 +293,9 @@ li a:hover {
 }
 
 .presentacion-boton {
-    height: 100px;
+    height: 50px;
+    width: 176px;
+    border-radius: 60px;
     margin-top: 50px;
     display: flex;
     justify-content: center;
@@ -309,10 +315,17 @@ li a:hover {
     line-height: 50px;
     transition: 0.5s;
 }
-
-.presentacion-boton a:hover {
-    background: #53677c;
-    transition: 0.5s;
+              
+.presentacion-boton{
+    transition: .5s, color .10s;
+    -webkit-transition: .5s, color .10s;
+    -moz-transition: .5s, color .10s;
+}
+.presentacion-boton:hover{
+    box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    -moz-transform:translate(0px,5px);
 }
 /*/////////////////////////////////////////////////////////////////////////////////////////*/
 /*EDICIÓN PRESENTACIÓN - @media*/
@@ -378,7 +391,7 @@ li a:hover {
 
 @media screen and (max-width: 320px) {
     #presentacion {
-        height: 710px;
+        height: 730px;
     }
 }
 
@@ -496,13 +509,18 @@ justify-content: flex-end;
     background-color: #4070f4;
     transform: translateX(-50%) rotate(45deg);
 }
+
+#section-exp .iconos-skills img {
+    width: 50px;
+    height: 50px;
+}
 /*/////////////////////////////////////////////////////////////////////////////////////////*/
 /*EDICIÓN EXPERIENCIA - @media*/
 @media screen and (max-width: 425px) {
     #section-exp {
         flex-direction: column;
         align-items: center;
-        margin-top: 80px;
+        margin-top: 130px;
     }
 
     #section-exp .parrafo-exp p {
@@ -515,7 +533,11 @@ justify-content: flex-end;
 
 @media screen and (max-width: 320px) {
     #section-exp {
-        margin-top: 100px;
+        margin-top: 160px;
+    }
+    #section-exp .iconos-skills img {
+        width: 40px;
+        height: 40px;
     }
 }
 
@@ -810,6 +832,13 @@ box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
 #acordeon {
     margin-top: 20px;
 }
+
+@media (max-width:320px) {
+    #acordeon iframe {
+        height: 180px;
+    }
+}
+
 
 /*/////////////////////////////////////////////////////////////////////////////////////////*/
 /*EDICIÓN FOOTER*/
