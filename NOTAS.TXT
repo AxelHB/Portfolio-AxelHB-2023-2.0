@@ -1,1 +1,2 @@
 NO CONFIAR EN EL LINK Y EL SCRIPT DE TRANSISIONES, FALLA EL VIEWPORT.
+etiqueta code es para dentro escribir código.
